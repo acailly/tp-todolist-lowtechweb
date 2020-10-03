@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.html'); %>
+  </head>
+  <body>
+    <section>
+      <h1>Todo List</h1>
+      <form method="POST" action="/new-item">
+        <input type="text" name="title" placeholder="Tyrell Wellick" />
+        <input type="submit" value="Ajouter cet élément" />
+      </form>
+      <ul>
+        <% items.forEach(function(item){ %>
+        <li><%= item%></li>
+        <% }); %>
+      </ul>
+    </section>
+  </body>
+</html>

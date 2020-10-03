@@ -1,0 +1,25 @@
+{
+  "name": "tp-todolist-lowtechweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "lighthouse": "lighthouse http://localhost:5000 --config-path=tools/lighthouse-config.js --budget-path=tools/lighthouse-budget.json --output-path=./dist/lighthouse-results.html --view",
+    "a11y": "axe http://localhost:5000",
+    "no-js": "node tools/no-js.js",
+    "expose": "ngrok http 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-core/cli": "^4.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "lighthouse": "^6.4.1",
+    "ngrok": "^3.3.0",
+    "rimraf": "^3.0.2",
+    "website-scraper": "^4.2.3"
+  }
+}

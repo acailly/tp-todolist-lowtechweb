@@ -1,0 +1,30 @@
+[
+  {
+    "timings": [
+      {
+        "metric": "interactive",
+        "budget": 2500
+      },
+      {
+        "metric": "first-meaningful-paint",
+        "budget": 2000
+      }
+    ],
+    "resourceSizes": [
+      {
+        "resourceType": "total",
+        "budget": 100
+      },
+      {
+        "resourceType": "script",
+        "budget": 1
+      }
+    ],
+    "resourceCounts": [
+      {
+        "resourceType": "third-party",
+        "budget": 1
+      }
+    ]
+  }
+]

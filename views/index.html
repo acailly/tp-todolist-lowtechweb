@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.html'); %>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>TP - Todo List <i>façon Low Tech Web</i></h1>
+        <p>
+          <a href="/list">Accéder à l'application</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Contexte</h2>
+        <p>
+          Vous répondez à un marché public visant à mettre à disposition
+          de la population une simple application de gestion de tâche, 
+          quelque chose qui ressemblerai à ca : 
+          <a href="http://todomvc.com/examples/react/#/">Todo MVC</a>.
+        </p>
+        <p>
+          La reglementation des marché publics 
+          (et votre éthique de développeur 😉) vous incite à rendre
+          cette application accessible au plus grand nombre
+        </p>
+        <p>
+          Dans le soucis d'économiser l'argent du contribuable,
+          cette application devra survivre le plus longtemps possible
+          avant de nécessiter une refonte.
+        </p>
+      </section>
+
+      <section>
+        <h2>Objectifs</h2>
+        <p>
+          Pour répondre aux enjeux exposés ci-dessus, vous devez faire 
+          en sorte :
+          <ul>
+            <li>votre application fonctionne (merci captain obvious !) (<code>npm run start</code>)</li>
+            <li>obtienne un score de 100% sur lighthouse configuré pour un mobile 3G (<code>npm run lighthouse</code>)</li>
+            <li>soit un minimum accessible (<code>npm run a11y)</code></li>
+            <li>s'ouvre sous Internet Explorer 👿</li>
+            <li>fonctionne sans JavaScript (<code>npm run no-js</code>)</li>
+            <li>fonctionne dans un navigateur texte (par exemple ELinks, <code>yum/apt/choco install elinks</code>)</li>
+            <li>n'inclue aucune dépendances avec des failles de sécurité 
+              connues (<code>npm audit</code>)</li>
+          </ul>
+        </p>
+      </section>
+
+      <section>
+        <h2>Exposer l'application à l'extérieur</h2>
+        <p>
+          En exécutant la commande <code>npm run ngrok</code>, 
+          vous exposez l'application via un tunnel SSH. 
+          L'adresse publique de l'application aléatoirement générée est
+          affichée dans la console.
+        </p>
+      </section>
+
+      <section>
+        <h2>Ressources utiles</h2>
+        <p>
+          <ul>
+            <li>Conférence sur le Low Tech Web : 
+              <a href="https://www.youtube.com/watch?v=w6BmIX564gk" target="_blank" rel="noreferrer">
+                https://www.youtube.com/watch?v=w6BmIX564gk
+              </a>
+            </li>
+            <li>Progressive Enhancement : 
+              <a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement" target="_blank" rel="noreferrer">
+                https://www.gov.uk/service-manual/technology/using-progressive-enhancement
+              </a>
+            </li>
+            <li>Navigateur texte ELinks : 
+              <a href="http://elinks.or.cz/index.html" target="_blank" rel="noreferrer">
+                http://elinks.or.cz/index.html
+              </a>
+            </li>
+            <li>Lighthouse : 
+              <a href="https://github.com/GoogleChrome/lighthouse" target="_blank" rel="noreferrer">
+                https://github.com/GoogleChrome/lighthouse
+              </a>
+            </li>
+            <li>Axe (outil d'accessibilité) : 
+              <a href="https://github.com/dequelabs/axe-core" target="_blank" rel="noreferrer">
+                https://github.com/dequelabs/axe-core
+              </a>
+            </li>
+          </ul>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
