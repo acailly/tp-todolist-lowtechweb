@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "lighthouse": "lighthouse http://localhost:5000 --config-path=tools/lighthouse-config.js --budget-path=tools/lighthouse-budget.json --output-path=./dist/lighthouse-results.html --view",
-    "a11y": "axe http://localhost:5000",
+    "lighthouse": "lighthouse http://localhost:5000/list --config-path=tools/lighthouse-config.js --budget-path=tools/lighthouse-budget.json --output-path=./dist/lighthouse-results.html --view",
+    "a11y": "axe http://localhost:5000/list",
     "no-js": "node tools/no-js.js",
     "expose": "ngrok http 5000"
   },

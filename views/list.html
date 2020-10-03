@@ -4,17 +4,31 @@
     <%- include('partials/head.html'); %>
   </head>
   <body>
-    <section>
-      <h1>Todo List</h1>
-      <form method="POST" action="/new-item">
-        <input type="text" name="title" placeholder="Tyrell Wellick" />
-        <input type="submit" value="Ajouter cet élément" />
-      </form>
-      <ul>
-        <% items.forEach(function(item){ %>
-        <li><%= item%></li>
-        <% }); %>
-      </ul>
-    </section>
+    <main role="main">
+      <section>
+        <h1>Todo List</h1>
+      </section>
+
+      <section>
+        <form method="POST" action="/new-item">
+          <label for="item-title">Penser à :</label>
+          <input
+            type="text"
+            id="item-title"
+            name="title"
+            placeholder="poser des questions"
+          />
+          <input type="submit" value="Ajouter cet élément" />
+        </form>
+      </section>
+
+      <section>
+        <ul>
+          <% items.forEach(function(item){ %>
+          <li><%= item%></li>
+          <% }); %>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

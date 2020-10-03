@@ -1,5 +1,5 @@
 module.exports = function (req, res) {
-  const items = ["Elliot", "Darlene", "Anjela"];
+  const items = require("../storage");
 
   res.render("list.html", { items: items });
 };
