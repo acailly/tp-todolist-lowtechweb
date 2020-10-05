@@ -6,9 +6,8 @@ Créer une todo list en s'inspirant de la conférence sur le Low Tech Web
 
 Pré-requis :
 
-- Un accès internet
+- Un accès internet et un navigateur
 - Node
-- Google Chrome
 
 Récupérer le code :
 
