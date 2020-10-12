@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "lighthouse": "lighthouse http://localhost:5000/list --config-path=tools/lighthouse-config.js --budget-path=tools/lighthouse-budget.json --output-path=./dist/lighthouse-results.html --view",
     "a11y": "axe http://localhost:5000/list",
     "no-js": "node tools/no-js.js",
@@ -14,11 +14,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@axe-core/cli": "^4.0.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "^4.0.0",
     "lighthouse": "^6.4.1",
     "ngrok": "^3.3.0",
+    "nodemon": "^2.0.4",
     "rimraf": "^3.0.2",
     "website-scraper": "^4.2.3"
   }
